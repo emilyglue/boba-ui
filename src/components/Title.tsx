@@ -1,12 +1,12 @@
-import Container from '@mui/material/Container'
-import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box'
+import Typography from '@mui/material/Typography'
 
 const Title = () => (
-  <Container>
-    <Typography variant='h3' component='h1'>
+  <Box position='fixed' width='100%'>
+    <Typography align='center' variant='h3' component='h1'>
       Should I get boba today?
     </Typography>
-  </Container>
+  </Box>
 )
 
 export default Title

@@ -1,13 +1,14 @@
 import './App.css'
+import Box from '@mui/material/Box'
 import Response from './components/Response'
 import Title from './components/Title'
 
 function App () {
   return (
-    <div className='App'>
+    <Box>
       <Title />
       <Response />
-    </div>
+    </Box>
   )
 }
 
