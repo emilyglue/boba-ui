@@ -1,14 +1,14 @@
-import './App.css';
+import './App.css'
 import Response from './components/Response'
 import Title from './components/Title'
 
-function App() {
+function App () {
   return (
-    <div className="App">
+    <div className='App'>
       <Title />
       <Response />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
