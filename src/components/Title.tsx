@@ -1,7 +1,6 @@
 import Typography from '@mui/material/Typography'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import { IconButton } from '@mui/material'
-import './Title.css'
 
 const Title = ({
   onClick,
@@ -11,7 +10,7 @@ const Title = ({
   shouldGetBoba: null | number
 }) => {
   const isInitialized = shouldGetBoba !== null
-  const titleClass = isInitialized ? 'container moveUp' : 'container'
+  const titleClass = isInitialized ? 'container moveup' : 'container'
   return (
     <div className={titleClass}>
       <Typography

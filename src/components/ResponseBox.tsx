@@ -1,7 +1,6 @@
 import { Button } from '@mui/material'
 import ColumnBox from '../utils/components/ColumnBox'
 import Response from './Response'
-import './ResponseBox.css'
 
 const DecisionButton = ({
   onClick,
