@@ -1,3 +1,37 @@
-* {
-  font-weight: 900;
+.hideOverflow {
+  height: calc(100vh / 4) * 3;
+  overflow: hidden;
+}
+
+.responseText {
+  padding-top: calc(100vh / 2);
+  animation: paddingMove 1s forwards;
+}
+
+@keyframes paddingMove {
+  from {
+    padding-top: 150vh;
+  }
+  to {
+    padding-top: 0;
+  }
+}
+
+.container {
+  margin-top: calc(100vh / 2 - 4rem);
+  position: fixed;
+  width: 100%;
+}
+
+.moveup {
+  animation: moveup 1s forwards;
+}
+
+@keyframes moveup {
+  from {
+    margin-top: calc(100vh / 2 - 6rem);
+  }
+  to {
+    margin-top: 0;
+  }
 }

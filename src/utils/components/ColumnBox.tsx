@@ -1,13 +1,13 @@
 import Box from '@mui/material/Box'
 import { ReactNode } from 'react'
 
-const ColumnBox = ({ children }: { children: ReactNode }) => (
+const ColumnBox = ({ children, ...props }: any) => (
   <Box
     alignItems='center'
     display='flex'
     flexDirection='column'
-    height='100vh'
     justifyContent='center'
+    {...props}
   >
     {children}
   </Box>

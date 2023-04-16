@@ -1,12 +1,36 @@
-import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
+import { IconButton } from '@mui/material'
+import './Title.css'
 
-const Title = () => (
-  <Box position='fixed' width='100%'>
-    <Typography align='center' variant='h3' component='h1'>
-      Should I get boba today?
-    </Typography>
-  </Box>
-)
+const Title = ({
+  onClick,
+  shouldGetBoba
+}: {
+  onClick: () => void
+  shouldGetBoba: null | number
+}) => {
+  const isInitialized = shouldGetBoba !== null
+  const titleClass = isInitialized ? 'container moveUp' : 'container'
+  return (
+    <div className={titleClass}>
+      <Typography
+        component='h1'
+        fontWeight={900}
+        textAlign='center'
+        textTransform='uppercase'
+        variant='h4'
+      >
+        Should I get boba today?
+        <br />
+        {!isInitialized && (
+          <IconButton aria-label='next' onClick={onClick}>
+            <ExpandMoreIcon />
+          </IconButton>
+        )}
+      </Typography>
+    </div>
+  )
+}
 
 export default Title
