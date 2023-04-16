@@ -1,6 +1,6 @@
-import Typography from '@mui/material/Typography'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
-import { IconButton } from '@mui/material'
+import { Button } from '@mui/material'
+import ColumnBox from '../utils/components/ColumnBox'
 
 const Title = ({
   onClick,
@@ -10,24 +10,22 @@ const Title = ({
   shouldGetBoba: null | number
 }) => {
   const isInitialized = shouldGetBoba !== null
-  const titleClass = isInitialized ? 'container moveup' : 'container'
+  const titleContainer = isInitialized ? 'container moveup' : 'container'
+  const titleText = isInitialized ? 'title shrink' : 'title'
+
   return (
-    <div className={titleClass}>
-      <Typography
-        component='h1'
-        fontWeight={900}
-        textAlign='center'
-        textTransform='uppercase'
-        variant='h4'
-      >
+    <div className={titleContainer}>
+      <h1 className={titleText} style={{ textAlign: 'center' }}>
         Should I get boba today?
-        <br />
-        {!isInitialized && (
-          <IconButton aria-label='next' onClick={onClick}>
+      </h1>
+      {!isInitialized && (
+        <ColumnBox>
+          <Button aria-label='next' onClick={onClick}>
+            hmmm
             <ExpandMoreIcon />
-          </IconButton>
-        )}
-      </Typography>
+          </Button>
+        </ColumnBox>
+      )}
     </div>
   )
 }

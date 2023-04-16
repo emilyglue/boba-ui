@@ -2,18 +2,6 @@ import { Button } from '@mui/material'
 import ColumnBox from '../utils/components/ColumnBox'
 import Response from './Response'
 
-const DecisionButton = ({
-  onClick,
-  text
-}: {
-  onClick: () => void
-  text: string
-}) => (
-  <Button onClick={onClick} style={{ margin: '2rem' }} variant='contained'>
-    {text}
-  </Button>
-)
-
 const ResponseBox = ({
   bobaKey,
   onClick,
@@ -44,7 +32,9 @@ const ResponseBox = ({
       <div className='hideOverflow' key={bobaKey}>
         <Response subtitleText={subtitleText} titleText={titleText} />
         <ColumnBox>
-          <DecisionButton onClick={onClick} text={btnText} />
+          <Button onClick={onClick} style={{ margin: '2rem' }}>
+            {btnText}
+          </Button>
         </ColumnBox>
       </div>
     </ColumnBox>
