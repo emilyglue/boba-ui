@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+.hideOverflow {
+  height: calc(100vh / 4) * 3;
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.responseText {
+  padding-top: calc(100vh / 2);
+  animation: paddingMove 1s forwards;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes paddingMove {
   from {
-    transform: rotate(0deg);
+    padding-top: 150vh;
   }
   to {
-    transform: rotate(360deg);
+    padding-top: 0;
   }
 }
+
+.container {
+  margin-top: calc(100vh / 2 - 8rem);
+  position: fixed;
+  width: 100%;
+  padding: 1em;
+}
+
+.moveup {
+  animation: moveup 1s forwards;
+}
+
+@keyframes moveup {
+  from {
+    margin-top: calc(100vh / 2 - 8rem);
+  }
+  to {
+    margin-top: 0;
+  }
+}
+
+h1.title {
+  display: block;
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: 'center';
+  margin-bottom: 1rem;
+}
+
+.shrink {
+  animation: shrink 1s forwards;
+}
+
+@keyframes shrink {
+  from {
+    font-size: 4rem;
+  }
+  to {
+    font-size: 2.125rem;
+  }
+}
+
+/* 2.125rem */
