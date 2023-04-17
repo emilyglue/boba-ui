@@ -23,6 +23,11 @@
   width: 100%;
 }
 
+a:hover {
+  color: blue;
+  transition: 0.75s;
+}
+
 .moveup {
   animation: moveup 1s forwards;
 }
