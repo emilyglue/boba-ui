@@ -52,7 +52,7 @@ const responses: any = {
     },
     {
       title: 'do it',
-      subtitle: "Why not try a new flavor while you're at it? \u{1F440}"
+      subtitle: "Why not try a new flavor while you're at it? \u{1F914}"
     },
     {
       title: 'yesss',
@@ -61,6 +61,14 @@ const responses: any = {
     {
       title: 'yes',
       subtitle: '...but only if you BYOS (Bring Your Own Straw)!'
+    },
+    {
+      title: 'ofc u should',
+      subtitle: 'why is that a question'
+    },
+    {
+      title: 'yaur',
+      subtitle: "let's gooo"
     }
   ]
 }
