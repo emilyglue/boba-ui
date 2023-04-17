@@ -26,7 +26,7 @@ const ResponseBox = ({
         <Response subtitleText={response.subtitle} titleText={response.title} />
         <ColumnBox>
           <Button onClick={onClick} style={{ margin: '2rem' }}>
-            {shouldGetBoba ? 'r u sure' : 'I need a second opinion'}
+            I need a second opinion
           </Button>
         </ColumnBox>
       </ColumnBox>
