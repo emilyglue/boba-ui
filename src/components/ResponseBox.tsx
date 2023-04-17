@@ -1,6 +1,7 @@
 import { Button } from '@mui/material'
 import ColumnBox from '../utils/components/ColumnBox'
 import Response from './Response'
+import responses from '../utils/responses'
 
 const ResponseBox = ({
   bobaKey,
@@ -12,28 +13,20 @@ const ResponseBox = ({
   shouldGetBoba: null | number
 }) => {
   const isInitialized = shouldGetBoba !== null
-  let titleText = ''
-  let subtitleText = ''
-  let btnText = ''
   if (!isInitialized) {
     return <></>
-  } else if (shouldGetBoba) {
-    titleText = 'Yaaaaaaaaaaaaas'
-    subtitleText = 'Go treat yo self'
-    btnText = 'r u sure'
-  } else {
-    titleText = 'Not this time...'
-    subtitleText = 'but maybe next time!'
-    btnText = 'I need a second opinion'
   }
+  const responseList = responses[shouldGetBoba]
+  const responseKey = Math.floor(Math.random() * responseList.length)
+  const response = responseList[responseKey]
 
   return (
     <ColumnBox height='100vh'>
       <div className='hideOverflow' key={bobaKey}>
-        <Response subtitleText={subtitleText} titleText={titleText} />
+        <Response subtitleText={response.subtitle} titleText={response.title} />
         <ColumnBox>
           <Button onClick={onClick} style={{ margin: '2rem' }}>
-            {btnText}
+            {shouldGetBoba ? 'r u sure' : 'I need a second opinion'}
           </Button>
         </ColumnBox>
       </div>
