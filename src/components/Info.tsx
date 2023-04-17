@@ -45,6 +45,7 @@ const Info = () => {
               buy me a boba?
             </Typography>
             <img
+              alt='profile pic'
               style={{
                 borderRadius: 20,
                 height: 200,
@@ -53,7 +54,7 @@ const Info = () => {
               }}
               src='./jinx.jpg'
             />
-            <img src='./icons8-venmo-40.png' />
+            <img alt='venmo logo' src='./icons8-venmo-40.png' />
             {/* <Box display='flex' flexDirection='row' alignItems='center'> */}
             <Typography id='modal-modal-description' sx={{ display: 'inline' }}>
               @emilyglue
