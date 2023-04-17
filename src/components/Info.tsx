@@ -1,9 +1,10 @@
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined'
-import { Modal, Typography } from '@mui/material'
+import { Link, Modal, Typography } from '@mui/material'
 import IconButton from '@mui/material/IconButton'
 import { Box } from '@mui/system'
 import { useState } from 'react'
 import ColumnBox from '../utils/components/ColumnBox'
+import OpenInNewIcon from '@mui/icons-material/OpenInNew'
 
 const style = {
   position: 'absolute' as 'absolute',
@@ -54,10 +55,19 @@ const Info = () => {
               }}
               src='./jinx.jpg'
             />
-            <img alt='venmo logo' src='./icons8-venmo-40.png' />
-            <Typography id='modal-modal-description' sx={{ display: 'inline' }}>
+            <img
+              alt='venmo logo'
+              src='./icons8-venmo-40.png'
+              style={{ margin: 5 }}
+            />
+            <Link
+              color='secondary'
+              href='https://account.venmo.com/u/emilyglue'
+              target='_blank'
+              underline='none'
+            >
               @emilyglue
-            </Typography>
+            </Link>
             <Typography
               mt={3}
               textAlign='center'
