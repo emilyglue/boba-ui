@@ -17,6 +17,9 @@ export const themeOptions: ThemeOptions = {
     },
     h2: {
       fontWeight: 900
+    },
+    h4: {
+      textTransform: 'lowercase'
     }
   }
 }
