@@ -55,7 +55,6 @@ const Info = () => {
               src='./jinx.jpg'
             />
             <img alt='venmo logo' src='./icons8-venmo-40.png' />
-            {/* <Box display='flex' flexDirection='row' alignItems='center'> */}
             <Typography id='modal-modal-description' sx={{ display: 'inline' }}>
               @emilyglue
             </Typography>
