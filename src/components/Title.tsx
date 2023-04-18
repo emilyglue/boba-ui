@@ -20,7 +20,7 @@ const Title = ({
       </h1>
       {!isInitialized && (
         <ColumnBox>
-          <Button aria-label='next' onClick={onClick}>
+          <Button aria-label='next' onClick={onClick} variant='outlined'>
             hmmm
             <ExpandMoreIcon />
           </Button>
