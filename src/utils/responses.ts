@@ -23,6 +23,10 @@ const responses: any = {
     {
       title: 'nope',
       subtitle: 'here, have some water instead \u{1F6B0}'
+    },
+    {
+      title: 'nah',
+      subtitle: '...but could you get me one?'
     }
   ],
   1: [
@@ -69,6 +73,10 @@ const responses: any = {
     {
       title: 'yaur',
       subtitle: "let's gooo"
+    },
+    {
+      title: 'yes.',
+      subtitle: 'always yes.'
     }
   ]
 }

@@ -28,8 +28,9 @@ const ResponseBox = ({
         <ColumnBox>
           {shouldGetBoba ? (
             <Link
-              target='_blank'
               href='https://letmegooglethat.com/?q=boba+near+me'
+              target='_blank'
+              underline='none'
             >
               <Button
                 aria-label='find-boba-near-me'
