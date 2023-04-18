@@ -13,7 +13,10 @@ export const themeOptions: ThemeOptions = {
   typography: {
     h1: {
       fontWeight: 900,
-      textTransform: 'uppercase'
+      textTransform: 'uppercase',
+      '@media (max-width:600px)': {
+        fontSize: '5rem'
+      }
     },
     h2: {
       fontWeight: 900

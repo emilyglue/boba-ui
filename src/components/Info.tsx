@@ -4,7 +4,6 @@ import IconButton from '@mui/material/IconButton'
 import { Box } from '@mui/system'
 import { useState } from 'react'
 import ColumnBox from '../utils/components/ColumnBox'
-import OpenInNewIcon from '@mui/icons-material/OpenInNew'
 
 const style = {
   position: 'absolute' as 'absolute',
@@ -27,6 +26,7 @@ const Info = () => {
         onClick={() => setShowInfoModal(true)}
         style={{
           position: 'fixed',
+          top: 0,
           right: 0,
           zIndex: 99999
         }}
@@ -41,7 +41,6 @@ const Info = () => {
       >
         <Box sx={style}>
           <ColumnBox>
-            <>&#x1F449;&#x1F448;</>
             <Typography id='modal-modal-title' variant='h6' component='h2'>
               buy me a boba?
             </Typography>
@@ -55,6 +54,7 @@ const Info = () => {
               }}
               src='./jinx.jpg'
             />
+            <>&#x1F449;&#x1F448;</>{' '}
             <img
               alt='venmo logo'
               src='./icons8-venmo-40.png'
