@@ -74,7 +74,8 @@ h1.title {
       font-size: 3rem;
     }
     to {
-      font-size: 2rem;
+      font-size: 1.3rem;
+      padding: 8px 0;
     }
   }
 }
